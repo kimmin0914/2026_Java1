@@ -37,4 +37,23 @@ public class rabbit {
     public int getyPos() {
         return yPos;
     }
+
+    // 토끼 좌표(위치)값을 설정하는 메소드 구현
+    public void setLocation(int xPos, int yPos){
+        this.xPos = xPos;
+        this.yPos = yPos;
+    }
+//    토끼의 모양, 위치 출력 메소드
+    public void printInfo(){
+        System.out.printf("%s 모양의 토끼는 (%d %d) 좌표에 위치하고 있다.\n", shape, xPos, yPos);
+    }
+
+//    x축으로 10씩 오른쪽으로 이동하는 메소드
+    public void moverigthTen(){
+        xPos += 10;
+    }
+//    x축으로 10씩 왼쪽으로 이동하는 메소드
+    public void moveleftTen(){
+        xPos -= 10;
+    }
 }
