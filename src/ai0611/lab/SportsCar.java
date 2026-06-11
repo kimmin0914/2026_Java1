@@ -1,4 +1,4 @@
-package ai0611;
+package ai0611.lab;
 
 public class SportsCar extends Car {
 
