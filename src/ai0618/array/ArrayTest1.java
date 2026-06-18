@@ -18,21 +18,21 @@ public class ArrayTest1 {
         }
 
         // 배열에 저장된 성적 한 줄로 출력
-        System.out.print("입력된 성적: ");
-        for (int i = 0; i < scores.length; i++) {
-            System.out.print(scores[i] + " ");
-        }
-//        int i = 0;
-//         enhanced(개선된) for
-//        for (int score : scores){
-//            System.out.print(subjects[i] + score + " ");
-//            sum += score;
-//            i++
+//        System.out.print("입력된 성적: ");
+//        for (int i = 0; i < scores.length; i++) {
+//            System.out.print(scores[i] + " ");
 //        }
+        int i = 0;
+//         enhanced(개선된) for
+        for (int score : scores){
+            System.out.print(subjects[i] + score + " ");
+            sum += score;
+            i++;
+        }
 
         // 전체 합계 계산
 
-        for (int i = 0; i < scores.length; i++) {
+        for (i = 0; i < scores.length; i++) {
             sum += scores[i];
         }
 
